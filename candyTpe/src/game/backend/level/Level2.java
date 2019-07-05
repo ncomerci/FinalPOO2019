@@ -1,15 +1,7 @@
 package game.backend.level;
 
-import game.backend.Figure;
-import game.backend.FigureDetector;
 import game.backend.GameState;
 import game.backend.Grid;
-import game.backend.element.*;
-import game.backend.move.Move;
-import game.backend.move.MoveMaker;
-import game.backend.move.TwoStripedMove;
-
-import java.awt.*;
 
 public class Level2 extends Grid {
 
