@@ -12,7 +12,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Level3 extends RegularFillLevel {
+public class Level3 extends Grid {
     private final int MAX_BOMBS = 3;
     private final int LOWER_MOVES_BOUND = 4;
     private final int HIGHER_MOVES_BOUND = 15;
