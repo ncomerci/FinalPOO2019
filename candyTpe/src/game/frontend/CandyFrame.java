@@ -7,6 +7,7 @@ import game.backend.element.Element;
 
 import game.backend.element.TimeBomb;
 import game.backend.level.Level2;
+import game.backend.level.Level3;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.geometry.Point2D;
@@ -36,8 +37,11 @@ public class CandyFrame extends VBox {
 		getChildren().add(boardPanel);
 		scorePanel = new ScorePanel();
 		getChildren().add(scorePanel);
-		extraPanel = new ScorePanel();
-		getChildren().add(extraPanel);
+
+		if(game.sameLevel(Level3.class)){
+			extraPanel = new ScorePanel();
+			getChildren().add(extraPanel);
+		}
 
 		if(game.sameLevel(Level2.class)) {
 			movesPanel = new Level2ScorePanel();
@@ -46,9 +50,10 @@ public class CandyFrame extends VBox {
 
 		game.initGame();
 
-		String initialExtraMessage = ((Long)game().getExtraInfo()).toString();
-		extraPanel.updateScore(initialExtraMessage);
-
+		if(extraPanel!=null) {
+			String initialExtraMessage = ((Long) game().getExtraInfo()).toString();
+			extraPanel.updateScore(initialExtraMessage);
+		}
 		GameListener listener;
 		game.addGameListener(listener = new GameListener() {
 
@@ -104,7 +109,8 @@ public class CandyFrame extends VBox {
 						}
 					}
 					scorePanel.updateScore(message);
-					extraPanel.updateScore(message2);
+					if(extraPanel!=null)
+						extraPanel.updateScore(message2);
 					if(movesPanel != null) {
 						movesPanel.updateScore(game.getMoves());
 					}
