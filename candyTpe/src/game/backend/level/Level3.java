@@ -3,14 +3,11 @@ package game.backend.level;
 import game.backend.GameState;
 import game.backend.Grid;
 import game.backend.element.Candy;
-import game.backend.element.CandyColor;
 import game.backend.element.TimeBomb;
 import java.awt.*;
 import java.security.SecureRandom;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class Level3 extends Grid {
     private final int MAX_BOMBS = 3;
