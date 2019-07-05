@@ -46,10 +46,14 @@ public class Level2 extends Grid {
         if(ret){
             int i;
                 for(i=0;i<SIZE;i++){
-                    if(i1==i2)
-                        gold_flags[i1][i]=true;
-                    else
+                    if(i1==i2 && !gold_flags[i1][i]) {
+                        gold_flags[i1][i] = true;
+                        state().addMove();
+                    }else if(j1==j2 && !gold_flags[i][j1]){
                         gold_flags[i][j1]=true;
+                        state().addMove();
+                    }
+
                 }
         }
         return ret;
