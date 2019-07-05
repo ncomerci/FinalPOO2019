@@ -33,7 +33,12 @@ public class Level1 extends Grid {
 			this.requiredScore = requiredScore;
 			this.maxMoves = maxMoves;
 		}
-		
+
+		@Override
+		public long getExtraInfo() {
+			return 0;
+		}
+
 		public boolean gameOver() {
 			return playerWon() || getMoves() >= maxMoves;
 		}

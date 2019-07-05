@@ -17,6 +17,11 @@ public class Level2Aux extends Grid {
     private class Level2auxState extends GameState {
 
         @Override
+        public long getExtraInfo() {
+            return 0;
+        }
+
+        @Override
         public boolean gameOver() {
             return playerWon();
         }

@@ -35,7 +35,9 @@ public class CandyGame implements GameListener {
 	public Cell get(int i, int j){
 		return grid.getCell(i, j);
 	}
-	
+
+	public long getExtraInfo() { return state.getExtraInfo();}
+
 	public void addGameListener(GameListener listener) {
 		grid.addListener(listener);
 	}

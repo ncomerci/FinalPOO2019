@@ -20,7 +20,9 @@ public abstract class GameState {
 	public int getMoves() {
 		return moves;
 	}
-	
+
+	public abstract long getExtraInfo();
+
 	public abstract boolean gameOver();
 	
 	public abstract boolean playerWon();

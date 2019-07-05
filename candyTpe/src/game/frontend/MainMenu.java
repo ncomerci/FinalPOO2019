@@ -3,6 +3,7 @@ package game.frontend;
 import game.backend.CandyGame;
 import game.backend.level.Level1;
 import game.backend.level.Level2;
+import game.backend.level.Level3;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
@@ -61,6 +62,11 @@ public class MainMenu {
 
         button2.setOnMouseClicked(e -> {
             launchLevel(primaryStage, Level2.class);
+            mediaPlayer.stop();
+        });
+
+        button3.setOnMouseClicked(e -> {
+            launchLevel(primaryStage, Level3.class);
             mediaPlayer.stop();
         });
 
