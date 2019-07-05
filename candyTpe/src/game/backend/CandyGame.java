@@ -59,7 +59,11 @@ public class CandyGame implements GameListener {
 	public int getMoves() { return state.getMoves(); }
 
 	public boolean sameLevel(Class<?> level) { return levelClass == level; }
-	
+
+	public Class<?> getLevelClass() {
+		return levelClass;
+	}
+
 	@Override
 	public void cellExplosion(Element e) {
 		state.addScore(e.getScore());
