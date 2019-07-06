@@ -2,35 +2,11 @@ package game.backend.level;
 
 import game.backend.Figure;
 import game.backend.FigureDetector;
-import game.backend.GameState;
-import game.backend.Grid;
 import game.backend.element.*;
 
 import java.awt.*;
 
-public class Level2Aux extends Grid { //cuando implementemos esta clase se puede hacer extender de lvl2 y solo sobreescribir trymove
-
-    private static final int CANT_CELLS = SIZE*SIZE;
-    private boolean[][] gold_flags = new boolean[SIZE][SIZE];
-
-
-    private class Level2auxState extends GameState {
-
-        @Override
-        public long getExtraInfo() {
-            return 0;
-        }
-
-        @Override
-        public boolean gameOver() {
-            return playerWon();
-        }
-
-        @Override
-        public boolean playerWon() {
-            return CANT_CELLS == getMoves();
-        }
-    }
+public class Level2Aux extends Level2 {
 
     private void flagsUpdater(Figure figure, int i, int j) {
         int aux;
@@ -53,14 +29,8 @@ public class Level2Aux extends Grid { //cuando implementemos esta clase se puede
         }
     }
 
-    @Override
-    protected boolean isGold(int i, int j) {
-        return gold_flags[i][j];
-    }
-
-    @Override
-    protected GameState newState() {
-        return new Level2auxState();
+    private boolean specialCandy(Element e){
+        return (e instanceof Bomb ||e instanceof WrappedCandy||e instanceof VerticalStripedCandy ||e instanceof HorizontalStripedCandy);
     }
 
     @Override
@@ -89,9 +59,5 @@ public class Level2Aux extends Grid { //cuando implementemos esta clase se puede
             flagsUpdater(fig2, i2, j2);
         }
         return ret;
-    }
-
-    private boolean specialCandy(Element e){
-        return (e instanceof Bomb ||e instanceof WrappedCandy||e instanceof VerticalStripedCandy ||e instanceof HorizontalStripedCandy);
     }
 }
