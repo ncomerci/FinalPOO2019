@@ -21,9 +21,17 @@ import java.nio.file.Paths;
 public class MainMenu {
 
     private static Stage current_Stage;
+    private AudioClip mediaPlayer;
 
     public MainMenu(Stage primaryStage) {
         current_Stage = primaryStage;
+
+        String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
+        Media sound = new Media(Paths.get(musicFile).toUri().toString());
+        mediaPlayer = new AudioClip(sound.getSource());
+        mediaPlayer.setVolume(0.1);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+        mediaPlayer.play();
 
         FlowPane root = new FlowPane(Orientation.VERTICAL, 100, 100);
         root.setAlignment(Pos.CENTER);
@@ -48,33 +56,18 @@ public class MainMenu {
 
         Scene mainMenuScene = new Scene(root, 800, 600);
 
-        String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
-        Media sound = new Media(Paths.get(musicFile).toUri().toString());
-        AudioClip mediaPlayer = new AudioClip(sound.getSource());
-        mediaPlayer.setVolume(0.1);
-        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        mediaPlayer.play();
+        button1.setOnMouseClicked(e -> launchLevel(primaryStage, Level1.class));
 
-        button1.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level1.class);
-            mediaPlayer.stop();
-        });
+        button2.setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
 
-        button2.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level2.class);
-            mediaPlayer.stop();
-        });
-
-        button3.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level3.class);
-            mediaPlayer.stop();
-        });
+        button3.setOnMouseClicked(e -> launchLevel(primaryStage, Level3.class));
 
         primaryStage.setScene(mainMenuScene);
         primaryStage.show();
     }
 
     private void launchLevel(Stage primaryStage, Class<?> level) {
+        mediaPlayer.stop();
         CandyGame game = new CandyGame(level);
         CandyFrame frame = new CandyFrame(game);
         Scene scene = new Scene(frame);
