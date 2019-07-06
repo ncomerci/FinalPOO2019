@@ -60,9 +60,7 @@ public class CandyGame implements GameListener {
 
 	public boolean sameLevel(Class<?> level) { return levelClass == level; }
 
-	public Class<?> getLevelClass() {
-		return levelClass;
-	}
+	public Class<?> getLevelClass() { return levelClass; }
 
 	@Override
 	public void cellExplosion(Element e) {

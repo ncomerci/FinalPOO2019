@@ -7,8 +7,6 @@ import game.backend.element.Element;
 
 import game.backend.element.TimeBomb;
 import game.backend.level.Level1;
-import game.backend.level.Level2;
-import game.backend.level.Level3;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.geometry.Point2D;
