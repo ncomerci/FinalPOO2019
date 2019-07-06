@@ -62,9 +62,11 @@ public enum Figure {
 		return points;
 	}
 	
-	public int size() {
-		return points.length;
-	}
+// --Commented out by Inspection START (05/07/2019 22:32):
+//	public int size() {
+//		return points.length;
+//	}
+// --Commented out by Inspection STOP (05/07/2019 22:32)
 
 	public boolean hasReplacement() {
 		return replacementClass != null;

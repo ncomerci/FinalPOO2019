@@ -3,6 +3,7 @@ package game.frontend;
 import game.backend.CandyGame;
 import game.backend.level.Level1;
 import game.backend.level.Level2;
+import game.backend.level.Level2Aux;
 import game.backend.level.Level3;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
@@ -15,15 +16,25 @@ import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
-
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class MainMenu {
+class MainMenu {
 
     private static Stage current_Stage;
+    private AudioClip mediaPlayer;
 
-    public MainMenu(Stage primaryStage) {
+    MainMenu(Stage primaryStage) {
         current_Stage = primaryStage;
+
+        String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
+        Media sound = new Media(Paths.get(musicFile).toUri().toString());
+        mediaPlayer = new AudioClip(sound.getSource());
+        mediaPlayer.setVolume(0.1);
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+        mediaPlayer.play();
 
         FlowPane root = new FlowPane(Orientation.VERTICAL, 100, 100);
         root.setAlignment(Pos.CENTER);
@@ -32,43 +43,23 @@ public class MainMenu {
         BackgroundImage backgroundImage = new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
         root.setBackground(new Background(backgroundImage));
 
-        Button button1 = new Button("Level 1");
-        Button button2 = new Button("Level 2");
-        Button button3 = new Button("Level 3");
+        Button[] buttons_array = {new Button("Level 1"), new Button("Level 2"), new Button("Level 3"), new Button("\t  Level 2\n(Alternative version)")};
+        List<Button> buttons = new ArrayList<>(Arrays.asList(buttons_array));
+        for(Button button: buttons) {
+            button.setFont(new Font("Serif Bold Italic", 40));
+            button.setMinSize(200, 100);
+        }
 
-        button1.setFont(new Font("Serif Bold Italic", 40));
-        button2.setFont(new Font("Serif Bold Italic", 40));
-        button3.setFont(new Font("Serif Bold Italic", 40));
-
-        button1.setMinSize(200, 100);
-        button2.setMinSize(200, 100);
-        button3.setMinSize(200, 100);
-
-        root.getChildren().addAll(button1, button2, button3);
+        root.getChildren().addAll(buttons_array);
 
         Scene mainMenuScene = new Scene(root, 800, 600);
 
-        String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
-        Media sound = new Media(Paths.get(musicFile).toUri().toString());
-        AudioClip mediaPlayer = new AudioClip(sound.getSource());
-        mediaPlayer.setVolume(0.1);
-        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
-        mediaPlayer.play();
+        //Class<?>[] levels = {Level1.class, Level2.class, Level3.class, Level2Aux.class}; //para cuando pueda mejorar lo de abajo
 
-        button1.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level1.class);
-            mediaPlayer.stop();
-        });
-
-        button2.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level2.class);
-            mediaPlayer.stop();
-        });
-
-        button3.setOnMouseClicked(e -> {
-            launchLevel(primaryStage, Level3.class);
-            mediaPlayer.stop();
-        });
+        buttons_array[0].setOnMouseClicked(e -> launchLevel(primaryStage, Level1.class));
+        buttons_array[1].setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
+        buttons_array[2].setOnMouseClicked(e -> launchLevel(primaryStage, Level3.class));
+        buttons_array[3].setOnMouseClicked(e -> launchLevel(primaryStage, Level2Aux.class));
 
         primaryStage.setScene(mainMenuScene);
         primaryStage.show();
@@ -81,9 +72,10 @@ public class MainMenu {
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
+        mediaPlayer.stop();
     }
 
-    public static Stage getCurrent_Stage() {
+    static Stage getCurrent_Stage() {
         return current_Stage;
     }
 }

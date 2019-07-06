@@ -3,19 +3,16 @@ package game.backend.level;
 import game.backend.GameState;
 import game.backend.Grid;
 import game.backend.element.Candy;
-import game.backend.element.CandyColor;
 import game.backend.element.TimeBomb;
 import java.awt.*;
 import java.security.SecureRandom;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
-public class Level3 extends RegularFillLevel {
-    private final int MAX_BOMBS = 3;
-    private final int LOWER_MOVES_BOUND = 4;
-    private final int HIGHER_MOVES_BOUND = 15;
+public class Level3 extends Grid {
+    private static final int MAX_BOMBS = 3;
+    private static final int LOWER_MOVES_BOUND = 4;
+    private static final int HIGHER_MOVES_BOUND = 15;
 
     protected GameState newState() {
         return new Level3State();
@@ -53,7 +50,7 @@ public class Level3 extends RegularFillLevel {
     @Override
     public void initialize() {
         super.initialize(); // llena de contenido las celdas y ahora agrego las bombas
-        generateBombs(MAX_BOMBS, LOWER_MOVES_BOUND, HIGHER_MOVES_BOUND);
+        generateBombs();
         generateCells(bombs);
 
     }
@@ -64,11 +61,11 @@ public class Level3 extends RegularFillLevel {
         }
     }
 
-    private void generateBombs(int maxBombs, int lowerMovesBound, int higherMovesBound) {
+    private void generateBombs() {
         SecureRandom random = new SecureRandom();
-        int bombsAmount = 1+random.nextInt(maxBombs);
+        int bombsAmount = 1+random.nextInt(MAX_BOMBS);
         for (int i = 0; i < bombsAmount; i++) {
-            bombs.add(new TimeBomb(lowerMovesBound, higherMovesBound));
+            bombs.add(new TimeBomb(LOWER_MOVES_BOUND, HIGHER_MOVES_BOUND));
         }
     }
 

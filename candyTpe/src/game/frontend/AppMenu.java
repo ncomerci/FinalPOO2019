@@ -6,9 +6,9 @@ import javafx.stage.Stage;
 
 import java.util.Optional;
 
-public class AppMenu extends MenuBar {
+class AppMenu extends MenuBar {
 
-    public AppMenu() {
+    AppMenu() {
         Menu file = new Menu("Archivo");
 
         MenuItem backMenuItem = new MenuItem("Volver al menú principal");
@@ -40,7 +40,9 @@ public class AppMenu extends MenuBar {
             alert.setTitle("Acerca De");
             alert.setHeaderText("Candy TPE");
             alert.setContentText("Cátedra POO 2018.\n" +
-                    "Implementación Original: Laura Zabaleta (POO 2013).");
+                    "Implementación Original: Laura Zabaleta (POO 2013)." +
+                    "\n============================\n" +
+                    "Modificaciones:\nTamara Puig\nNicolás Comerci\nLuciano Boccardi\n(POO 2019)");
             alert.showAndWait();
         });
         help.getItems().add(aboutMenuItem);

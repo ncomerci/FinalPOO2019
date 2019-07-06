@@ -6,7 +6,7 @@ import game.backend.Grid;
 public class Level2 extends Grid {
 
     private static final int CANT_CELLS = SIZE*SIZE;
-    private boolean[][] gold_flags = new boolean[SIZE][SIZE];
+    protected boolean[][] gold_flags = new boolean[SIZE][SIZE];
 
 
     private class Level2State extends GameState {

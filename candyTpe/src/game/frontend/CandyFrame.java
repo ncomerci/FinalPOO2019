@@ -6,8 +6,7 @@ import game.backend.cell.Cell;
 import game.backend.element.Element;
 
 import game.backend.element.TimeBomb;
-import game.backend.level.Level2;
-import game.backend.level.Level3;
+import game.backend.level.Level1;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.geometry.Point2D;
@@ -22,8 +21,7 @@ public class CandyFrame extends VBox {
 
 	private BoardPanel boardPanel;
 	private ScorePanel scorePanel;
-	private Level2ScorePanel movesPanel;
-	private ScorePanel extraPanel;
+	private ExtraPanelHandler handler;
 	private ImageManager images;
 	private Point2D lastPoint;
 	private CandyGame game;
@@ -38,55 +36,44 @@ public class CandyFrame extends VBox {
 		scorePanel = new ScorePanel();
 		getChildren().add(scorePanel);
 
-		if(game.sameLevel(Level3.class)){
-			extraPanel = new ScorePanel();
-			getChildren().add(extraPanel);
-		}
-
-		if(game.sameLevel(Level2.class)) {
-			movesPanel = new Level2ScorePanel();
-			getChildren().add(movesPanel);
-		}
-
 		game.initGame();
 
-		if(extraPanel!=null) {
-			String initialExtraMessage = ((Long) game().getExtraInfo()).toString();
-			extraPanel.updateScore(initialExtraMessage);
+		if(!game.sameLevel(Level1.class)){
+			handler = new ExtraPanelHandler(this);
 		}
+
 		GameListener listener;
 		game.addGameListener(listener = new GameListener() {
-
-		@Override
-		public void gridUpdated() {
-			Timeline timeLine = new Timeline();
-			Duration frameGap = Duration.millis(100);
-			Duration frameTime = Duration.ZERO;
-			for (int i = game().getSize() - 1; i >= 0; i--) {
-				for (int j = game().getSize() - 1; j >= 0; j--) {
-					int finalI = i;
-					int finalJ = j;
-					Cell cell = CandyFrame.this.game.get(i, j);
-					Element element = cell.getContent();
-					Image image = images.getImage(element);
-					if (element instanceof TimeBomb) {
-						timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, null)));
-						timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, image, ((TimeBomb) element).getCountdown())));
-					}
-					else {
-						timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, null, false )));
-						timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, image, game().isGold(finalI, finalJ))));
-					}
+				@Override
+				public void cellExplosion(Element e) {
+					//
 				}
-				frameTime = frameTime.add(frameGap);
+				@Override
+			public void gridUpdated() {
+				Timeline timeLine = new Timeline();
+				Duration frameGap = Duration.millis(100);
+				Duration frameTime = Duration.ZERO;
+				for (int i = game().getSize() - 1; i >= 0; i--) {
+					for (int j = game().getSize() - 1; j >= 0; j--) {
+						int finalI = i;
+						int finalJ = j;
+						Cell cell = CandyFrame.this.game.get(i, j);
+						Element element = cell.getContent();
+						Image image = images.getImage(element);
+						if (element instanceof TimeBomb) {
+							timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, null)));
+							timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, image, ((TimeBomb) element).getCountdown())));
+						}
+						else {
+							timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, null, false )));
+							timeLine.getKeyFrames().add(new KeyFrame(frameTime, e -> boardPanel.setImage(finalI, finalJ, image, game().isGold(finalI, finalJ))));
+						}
+					}
+					frameTime = frameTime.add(frameGap);
+				}
+				timeLine.play();
 			}
-			timeLine.play();
-		}
-		@Override
-		public void cellExplosion(Element e) {
-			//
-		}
-	});
+		});
 
 		listener.gridUpdated();
 
@@ -100,7 +87,6 @@ public class CandyFrame extends VBox {
 					System.out.println("Get second = " +  newPoint);
 					game().tryMove((int)lastPoint.getX(), (int)lastPoint.getY(), (int)newPoint.getX(), (int)newPoint.getY());
 					String message = ((Long)game().getScore()).toString();
-					String message2 = ((Long)game().getExtraInfo()).toString();
 					if (game().isFinished()) {
 						if (game().playerWon()) {
 							message = message + " Finished - Player Won!";
@@ -109,19 +95,17 @@ public class CandyFrame extends VBox {
 						}
 					}
 					scorePanel.updateScore(message);
-					if(extraPanel!=null)
-						extraPanel.updateScore(message2);
-					if(movesPanel != null) {
-						movesPanel.updateScore(game.getMoves());
+
+					if(handler != null) {
+						handler.updatePanel();
 					}
 					lastPoint = null;
 				}
 			}
 		});
-
 	}
 
-	private CandyGame game() {
+	protected CandyGame game() {
 		return game;
 	}
 
