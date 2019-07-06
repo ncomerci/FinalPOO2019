@@ -2,10 +2,7 @@ package game.backend;
 
 import game.backend.cell.CandyGeneratorCell;
 import game.backend.cell.Cell;
-import game.backend.element.Candy;
-import game.backend.element.CandyColor;
-import game.backend.element.Element;
-import game.backend.element.Wall;
+import game.backend.element.*;
 import game.backend.move.Move;
 import game.backend.move.MoveMaker;
 
@@ -88,6 +85,7 @@ public abstract class Grid {
 		}
 		fillCells();
 		fallElements();
+
 	}	
 
 	public Element get(int i, int j) {

@@ -2,11 +2,14 @@ package game.backend.level;
 
 import game.backend.GameState;
 import game.backend.Grid;
-import game.backend.element.Candy;
-import game.backend.element.TimeBomb;
+import game.backend.element.*;
+
 import java.awt.*;
 import java.security.SecureRandom;
+import java.security.interfaces.ECKey;
+import java.sql.Time;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 public class Level3 extends Grid {
@@ -17,6 +20,7 @@ public class Level3 extends Grid {
     protected GameState newState() {
         return new Level3State();
     }
+
 
     private List<TimeBomb> bombs = new ArrayList<>();
 
@@ -37,8 +41,35 @@ public class Level3 extends Grid {
     }
 
     @Override
+    public void cellExplosion(Element e) {
+        TimeBomb aux;
+        boolean i=true;
+        Iterator<TimeBomb> it=bombs.iterator();
+        if(e instanceof TimeBomb) {
+            while (it.hasNext() && i) {
+                aux=it.next();
+                if (aux.equals(e)) {
+                    it.remove();
+                    i=false;
+                }
+            }
+        }
+        super.cellExplosion(e);
+    }
+
+    @Override
     public boolean tryMove(int i1, int j1, int i2, int j2) {
         boolean ret;
+        Candy aux= specialCase(i1,j1,i2,j2);
+        if(aux!=null){
+            CandyColor color=aux.getColor();
+            Iterator<TimeBomb> it= bombs.iterator();
+            while (it.hasNext()){
+                if(it.next().getColor()==color)
+                    it.remove();
+            }
+        }
+
         if (ret = super.tryMove(i1, j1, i2, j2)) {
             state().addMove();
             System.out.println("Bombs amount is: " + bombs.size());
@@ -47,6 +78,15 @@ public class Level3 extends Grid {
         return ret;
     }
 
+    Candy specialCase(int i1, int j1, int i2, int j2){
+        Element e1=get(i1,j1);
+        Element e2=get(i2,j2);
+        if ((e1 instanceof Bomb && (e2 instanceof HorizontalStripedCandy||e2 instanceof VerticalStripedCandy)))
+                return (Candy)e2;
+        else if(e2 instanceof Bomb && (e1 instanceof HorizontalStripedCandy||e1 instanceof VerticalStripedCandy))
+            return (Candy) e1;
+        else return null;
+    }
     @Override
     public void initialize() {
         super.initialize(); // llena de contenido las celdas y ahora agrego las bombas

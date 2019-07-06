@@ -76,14 +76,14 @@ public class CandyFrame extends VBox {
 		});
 
 		listener.gridUpdated();
-
 		addEventHandler(MouseEvent.MOUSE_CLICKED, event -> {
-			if (lastPoint == null) {
+			boolean finished=!game().isFinished();
+			if (lastPoint == null && finished) {
 				lastPoint = translateCoords(event.getX(), event.getY());
 				System.out.println("Get first = " +  lastPoint);
 			} else {
 				Point2D newPoint = translateCoords(event.getX(), event.getY());
-				if (newPoint != null) {
+				if (newPoint != null && finished) {
 					System.out.println("Get second = " +  newPoint);
 					game().tryMove((int)lastPoint.getX(), (int)lastPoint.getY(), (int)newPoint.getX(), (int)newPoint.getY());
 					String message = ((Long)game().getScore()).toString();
