@@ -8,7 +8,7 @@ import game.backend.element.*;
 
 import java.awt.*;
 
-public class Level2Aux extends Grid {
+public class Level2Aux extends Grid { //cuando implementemos esta clase se puede hacer extender de lvl2 y solo sobreescribir trymove
 
     private static final int CANT_CELLS = SIZE*SIZE;
     private boolean[][] gold_flags = new boolean[SIZE][SIZE];

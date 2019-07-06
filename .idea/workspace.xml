@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2216eeed-d60f-4b08-bbf8-417fbe53a513" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Figure.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1$Level1State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1$Level1State.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1.class" afterDir="false" />
@@ -25,7 +24,7 @@
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-697">
-              <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+              <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
               <folding>
                 <element signature="e#3439#3440#0" expanded="true" />
                 <element signature="e#3457#3458#0" expanded="true" />
@@ -34,14 +33,35 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+            <state relative-caret-position="51">
+              <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-289">
+              <caret line="5" column="32" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="10" column="132" selection-start-line="10" selection-start-column="132" selection-end-line="10" selection-end-column="132" />
             </state>
           </provider>
         </entry>
@@ -55,18 +75,6 @@
                 <element signature="imports" expanded="true" />
                 <element signature="e#660#661#0" expanded="true" />
                 <element signature="e#702#703#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="79" column="33" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,15 +141,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/ScorePanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -171,7 +170,6 @@
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/ScorePanel.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/Level2ScorePanel.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/GameApp.java" />
-        <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/RegularFiller.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/element/TimeBomb.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java" />
@@ -185,6 +183,7 @@
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level1.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java" />
+        <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" />
       </list>
     </option>
   </component>
@@ -367,7 +366,21 @@
       <option name="project" value="LOCAL" />
       <updated>1562377169548</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="arreglos varios">
+      <created>1562377635057</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562377635057</updated>
+    </task>
+    <task id="LOCAL-00010" summary="arreglos varios">
+      <created>1562377802556</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1562377802556</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -572,13 +585,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/RegularFillLevel.java" />
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8">
-          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/Level2ScorePanel.java" />
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/Level3ScorePanel.java" />
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/LevelFrame.java" />
@@ -586,16 +592,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -696,7 +692,7 @@
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-697">
-          <caret line="41" column="50" lean-forward="true" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
+          <caret line="41" column="50" selection-start-line="41" selection-start-column="50" selection-end-line="41" selection-end-column="50" />
           <folding>
             <element signature="e#3439#3440#0" expanded="true" />
             <element signature="e#3457#3458#0" expanded="true" />
@@ -706,11 +702,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="22" column="9" lean-forward="true" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
+        <state relative-caret-position="51">
+          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-289">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="132" selection-start-line="10" selection-start-column="132" selection-end-line="10" selection-end-column="132" />
         </state>
       </provider>
     </entry>
