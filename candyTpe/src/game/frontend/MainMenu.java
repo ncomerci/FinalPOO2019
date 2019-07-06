@@ -18,12 +18,12 @@ import javafx.stage.Stage;
 
 import java.nio.file.Paths;
 
-public class MainMenu {
+class MainMenu {
 
     private static Stage current_Stage;
     private AudioClip mediaPlayer;
 
-    public MainMenu(Stage primaryStage) {
+    MainMenu(Stage primaryStage) {
         current_Stage = primaryStage;
 
         String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
@@ -67,16 +67,16 @@ public class MainMenu {
     }
 
     private void launchLevel(Stage primaryStage, Class<?> level) {
-        mediaPlayer.stop();
         CandyGame game = new CandyGame(level);
         CandyFrame frame = new CandyFrame(game);
         Scene scene = new Scene(frame);
         primaryStage.setResizable(false);
         primaryStage.setScene(scene);
         primaryStage.show();
+        mediaPlayer.stop();
     }
 
-    public static Stage getCurrent_Stage() {
+    static Stage getCurrent_Stage() {
         return current_Stage;
     }
 }
