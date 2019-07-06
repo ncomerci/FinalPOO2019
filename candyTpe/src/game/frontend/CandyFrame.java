@@ -39,7 +39,7 @@ public class CandyFrame extends VBox {
 		game.initGame();
 
 		if(!game.sameLevel(Level1.class)){
-			handler = new ExtraPanelHandler(this, game.getLevelClass());
+			handler = new ExtraPanelHandler(this);
 		}
 
 		GameListener listener;
