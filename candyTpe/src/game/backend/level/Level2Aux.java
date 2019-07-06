@@ -91,10 +91,7 @@ public class Level2Aux extends Grid {
         return ret;
     }
 
-    public static int getCantCells() {
-        return CANT_CELLS;
-    }
-    boolean specialCandy(Element e){
+    private boolean specialCandy(Element e){
         return (e instanceof Bomb ||e instanceof WrappedCandy||e instanceof VerticalStripedCandy ||e instanceof HorizontalStripedCandy);
     }
 }
