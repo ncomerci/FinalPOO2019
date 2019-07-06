@@ -134,11 +134,13 @@ public class Level3 extends Grid {
             return getMinCountdown();
         }
 
-        public boolean gameOver() {
-            return playerWon() || getMinCountdown() <= 0;
+        @Override
+        public boolean looser() {
+            return winner() || getMinCountdown() <= 0;
         }
 
-        public boolean playerWon() {
+        @Override
+        public boolean winner() {
             return bombs.size() == 0;
         }
 

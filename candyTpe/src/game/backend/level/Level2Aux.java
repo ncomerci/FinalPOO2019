@@ -22,12 +22,12 @@ public class Level2Aux extends Grid { //cuando implementemos esta clase se puede
         }
 
         @Override
-        public boolean gameOver() {
-            return playerWon();
+        public boolean looser() {
+            return winner();
         }
 
         @Override
-        public boolean playerWon() {
+        public boolean winner() {
             return CANT_CELLS == getMoves();
         }
     }

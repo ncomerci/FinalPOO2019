@@ -17,12 +17,12 @@ public class Level2 extends Grid {
         }
 
         @Override
-        public boolean gameOver() {
-            return playerWon();
+        public boolean looser() {
+            return winner();
         }
 
         @Override
-        public boolean playerWon() {
+        public boolean winner() {
             return CANT_CELLS == getMoves();
         }
     }
