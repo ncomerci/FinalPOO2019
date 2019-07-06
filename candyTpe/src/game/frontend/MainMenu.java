@@ -3,6 +3,7 @@ package game.frontend;
 import game.backend.CandyGame;
 import game.backend.level.Level1;
 import game.backend.level.Level2;
+import game.backend.level.Level2Aux;
 import game.backend.level.Level3;
 import javafx.geometry.Orientation;
 import javafx.geometry.Pos;
@@ -43,7 +44,7 @@ class MainMenu {
         BackgroundImage backgroundImage = new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
         root.setBackground(new Background(backgroundImage));
 
-        Button[] buttons_array = {new Button("Level 1"), new Button("Level 2"), new Button("Level 3")};
+        Button[] buttons_array = {new Button("Level 1"), new Button("Level 2"), new Button("Level 3"), new Button("\t  Level 2\n(Alternative version)")};
         List<Button> buttons = new ArrayList<>(Arrays.asList(buttons_array));
 
         for(Button button: buttons) {
@@ -60,6 +61,9 @@ class MainMenu {
         buttons_array[1].setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
 
         buttons_array[2].setOnMouseClicked(e -> launchLevel(primaryStage, Level3.class));
+
+        buttons_array[3].setOnMouseClicked(e -> launchLevel(primaryStage, Level2Aux.class));
+
 
         primaryStage.setScene(mainMenuScene);
         primaryStage.show();
