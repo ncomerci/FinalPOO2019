@@ -17,6 +17,9 @@ import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 class MainMenu {
 
@@ -40,27 +43,23 @@ class MainMenu {
         BackgroundImage backgroundImage = new BackgroundImage(image, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.DEFAULT, BackgroundSize.DEFAULT);
         root.setBackground(new Background(backgroundImage));
 
-        Button button1 = new Button("Level 1");
-        Button button2 = new Button("Level 2");
-        Button button3 = new Button("Level 3");
+        Button[] buttons_array = {new Button("Level 1"), new Button("Level 2"), new Button("Level 3")};
+        List<Button> buttons = new ArrayList<>(Arrays.asList(buttons_array));
 
-        button1.setFont(new Font("Serif Bold Italic", 40));
-        button2.setFont(new Font("Serif Bold Italic", 40));
-        button3.setFont(new Font("Serif Bold Italic", 40));
+        for(Button button: buttons) {
+            button.setFont(new Font("Serif Bold Italic", 40));
+            button.setMinSize(200, 100);
+        }
 
-        button1.setMinSize(200, 100);
-        button2.setMinSize(200, 100);
-        button3.setMinSize(200, 100);
-
-        root.getChildren().addAll(button1, button2, button3);
+        root.getChildren().addAll(buttons_array);
 
         Scene mainMenuScene = new Scene(root, 800, 600);
 
-        button1.setOnMouseClicked(e -> launchLevel(primaryStage, Level1.class));
+        buttons_array[0].setOnMouseClicked(e -> launchLevel(primaryStage, Level1.class));
 
-        button2.setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
+        buttons_array[1].setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
 
-        button3.setOnMouseClicked(e -> launchLevel(primaryStage, Level3.class));
+        buttons_array[2].setOnMouseClicked(e -> launchLevel(primaryStage, Level3.class));
 
         primaryStage.setScene(mainMenuScene);
         primaryStage.show();
