@@ -2,31 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2216eeed-d60f-4b08-bbf8-417fbe53a513" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/CandyGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/CandyGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/Checkpoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/Checkpoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/Figure.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/Figure.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/FigureDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/FigureDetector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/element/HorizontalStripedCandy.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/element/HorizontalStripedCandy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/element/VerticalStripedCandy.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/element/VerticalStripedCandy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/element/WrappedCandy.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/element/WrappedCandy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level1.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/move/CandyMove.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/move/CandyMove.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/move/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/move/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/backend/move/MoveMaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/backend/move/MoveMaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/BoardPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/BoardPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/ExtraPanelHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/GameApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/GameApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/ImageManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/ImageManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/candyTpe/src/game/frontend/ScorePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/candyTpe/src/game/frontend/ScorePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/CandyGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/CandyGame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Checkpoint.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Checkpoint.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Figure.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Figure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/FigureDetector.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/FigureDetector.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/GameState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Grid.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/Grid.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/cell/Cell.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/cell/Cell.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/HorizontalStripedCandy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/HorizontalStripedCandy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/VerticalStripedCandy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/VerticalStripedCandy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/WrappedCandy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/element/WrappedCandy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1$Level1State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level1$Level1State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2$Level2State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2$Level2State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2Aux$Level2auxState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2Aux$Level2auxState.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2Aux.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level2Aux.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level3$Level3State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level3$Level3State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/level/Level3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/CandyMove.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/CandyMove.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/Move.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/MoveMaker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/backend/move/MoveMaker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/BoardPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/BoardPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/CandyFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/CandyFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ExtraPanelHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ExtraPanelHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/GameApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/GameApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ImageManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ImageManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ScorePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/candyTpe/game/frontend/ScorePanel.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="C:\Users\ITBA\Documents\Programación Orientada a Objetos\Final\FinalPOO2019\.idea\shelf/" />
@@ -40,25 +45,42 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/CandyGame.java">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+            <state relative-caret-position="901">
+              <caret line="63" column="69" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
-                <element signature="e#578#579#0" expanded="true" />
-                <element signature="e#601#602#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java">
+        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+            <state relative-caret-position="291">
+              <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -75,20 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/MainMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1020">
+              <caret line="79" selection-start-line="79" selection-end-line="79" />
             </state>
           </provider>
         </entry>
@@ -96,17 +106,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/AppMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="28" column="52" selection-start-line="28" selection-start-column="52" selection-end-line="28" selection-end-column="52" />
+            <state relative-caret-position="1445">
+              <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -114,7 +115,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="136">
               <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
             </state>
           </provider>
@@ -126,7 +127,7 @@
             <state relative-caret-position="170">
               <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
               <folding>
-                <element signature="e#311#312#0" expanded="true" />
+                <element signature="e#278#279#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -135,7 +136,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/BoardPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
+            <state relative-caret-position="102">
               <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -183,7 +184,6 @@
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/move/CandyMove.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/FigureDetector.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/element/TimeBomb.java" />
-        <option value="$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level1.java" />
@@ -193,14 +193,16 @@
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/BoardPanel.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java" />
         <option value="$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java" />
+        <option value="$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java" />
+        <option value="$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="1617" />
-    <option name="height" value="878" />
+    <option name="x" value="-13" />
+    <option name="y" value="-13" />
+    <option name="width" value="1618" />
+    <option name="height" value="880" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -208,19 +210,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="FinalPOO2019" type="b2602c69:ProjectViewProjectNode" />
               <item name="candyTpe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FinalPOO2019" type="b2602c69:ProjectViewProjectNode" />
-              <item name="candyTpe" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalPOO2019" type="b2602c69:ProjectViewProjectNode" />
@@ -239,6 +234,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="game" type="462c0819:PsiDirectoryNode" />
               <item name="backend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="FinalPOO2019" type="b2602c69:ProjectViewProjectNode" />
+              <item name="candyTpe" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="game" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
+              <item name="cell" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FinalPOO2019" type="b2602c69:ProjectViewProjectNode" />
@@ -259,6 +262,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -447,7 +452,14 @@
       <option name="project" value="LOCAL" />
       <updated>1562465257544</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Arreglos generales">
+      <created>1562467775233</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1562467775233</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -466,7 +478,7 @@
     <frame x="-7" y="-7" width="1390" height="747" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21246246" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21546547" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -475,7 +487,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49959514" weight="0.25326797" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49959514" visible="true" weight="0.25326797" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39965987" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -486,7 +498,7 @@
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32843137" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
-      <window_info active="true" anchor="bottom" id="Inspection Results" order="13" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Inspection Results" order="13" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -593,7 +605,8 @@
     <MESSAGE value="borre comment" />
     <MESSAGE value="icono y titulo agregados" />
     <MESSAGE value="..." />
-    <option name="LAST_COMMIT_MESSAGE" value="..." />
+    <MESSAGE value="Arreglos generales" />
+    <option name="LAST_COMMIT_MESSAGE" value="Arreglos generales" />
   </component>
   <component name="editorHistoryManager">
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
@@ -781,13 +794,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="44" selection-start-line="44" selection-end-line="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/element/TimeBomb.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -809,27 +815,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2Aux.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-865">
           <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,13 +829,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/GameApp.java">
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/CandyGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#311#312#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="391">
+          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="901">
+          <caret line="63" column="69" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -859,14 +859,38 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+        <state relative-caret-position="1020">
+          <caret line="79" selection-start-line="79" selection-end-line="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="105" column="33" selection-start-line="105" selection-start-column="33" selection-end-line="105" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/GameApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding>
+            <element signature="e#278#279#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/BoardPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="102">
           <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -874,35 +898,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/frontend/CandyFrame.java">
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/GameState.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="21" column="29" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/Grid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="137" column="18" selection-start-line="137" selection-start-column="18" selection-end-line="137" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/CandyGame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="272">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#601#602#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/level/Level3.java">
+    <entry file="file://$PROJECT_DIR$/candyTpe/src/game/backend/cell/Cell.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="63" column="69" lean-forward="true" selection-start-line="63" selection-start-column="69" selection-end-line="63" selection-end-column="69" />
+        <state relative-caret-position="291">
+          <caret line="48" column="13" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
         </state>
       </provider>
     </entry>

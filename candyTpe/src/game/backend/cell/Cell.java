@@ -47,7 +47,6 @@ public class Cell {
 			if (explosionCascade != null) {
 				expandExplosion(explosionCascade); 
 			}
-			this.content = new Nothing();
 		}
 	}
 	
