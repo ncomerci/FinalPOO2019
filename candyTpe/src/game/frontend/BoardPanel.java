@@ -16,7 +16,7 @@ import static javafx.scene.paint.Color.YELLOW;
 
 public class BoardPanel extends TilePane {
 
-	private StackPane[][] cells;
+	private final StackPane[][] cells;
 
 	public BoardPanel(final int rows, final int columns, final int cellSize) {
 		setPrefRows(rows);

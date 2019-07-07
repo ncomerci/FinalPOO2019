@@ -5,7 +5,7 @@ import game.backend.element.Element;
 
 public abstract class Move {
 	
-	private Grid grid;
+	private final Grid grid;
 	protected int i1, j1, i2, j2;
 	
 	public Move(Grid grid) {

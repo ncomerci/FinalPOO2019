@@ -23,8 +23,8 @@ public class Level1 extends Grid {
 	}
 	
 	private class Level1State extends GameState {
-		private long requiredScore;
-		private long maxMoves;
+		private final long requiredScore;
+		private final long maxMoves;
 		
 		public Level1State(long requiredScore, int maxMoves) {
 			this.requiredScore = requiredScore;

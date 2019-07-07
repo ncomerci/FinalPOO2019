@@ -34,9 +34,9 @@ public enum Figure {
 	F12(new Point[]{ new Point(-2,0), new Point(-1,0)}, 3);
 	
 	
-	private Point[] points;
-	private int value;
-	private Class<?> replacementClass;
+	private final Point[] points;
+	private final int value;
+	private final Class<?> replacementClass;
 	private boolean isCandyRepl = true;
 
 	Figure(Point[] points, int value, Class<?> replacementClass) {

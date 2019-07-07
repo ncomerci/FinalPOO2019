@@ -11,7 +11,7 @@ import java.awt.*;
 public class Level2Aux extends Grid {
 
     private static final int CANT_CELLS = SIZE*SIZE;
-    private boolean[][] gold_flags = new boolean[SIZE][SIZE];
+    private final boolean[][] gold_flags = new boolean[SIZE][SIZE];
 
 
     private class Level2auxState extends GameState {

@@ -6,8 +6,6 @@ import game.backend.element.*;
 
 import java.awt.*;
 import java.security.SecureRandom;
-import java.security.interfaces.ECKey;
-import java.sql.Time;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -22,7 +20,7 @@ public class Level3 extends Grid {
     }
 
 
-    private List<TimeBomb> bombs = new ArrayList<>();
+    private final List<TimeBomb> bombs = new ArrayList<>();
 
     @Override
     public void clearContent(int i, int j) {
@@ -63,11 +61,7 @@ public class Level3 extends Grid {
         Candy aux= specialCase(i1,j1,i2,j2);
         if(aux!=null){
             CandyColor color=aux.getColor();
-            Iterator<TimeBomb> it= bombs.iterator();
-            while (it.hasNext()){
-                if(it.next().getColor()==color)
-                    it.remove();
-            }
+            bombs.removeIf(timeBomb -> timeBomb.getColor() == color);
         }
 
         if (ret = super.tryMove(i1, j1, i2, j2)) {

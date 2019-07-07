@@ -24,7 +24,7 @@ import java.util.List;
 class MainMenu {
 
     private static Stage current_Stage;
-    private AudioClip mediaPlayer;
+    private final AudioClip mediaPlayer;
 
     MainMenu(Stage primaryStage) {
         current_Stage = primaryStage;
