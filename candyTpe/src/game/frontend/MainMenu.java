@@ -29,6 +29,11 @@ class MainMenu {
     MainMenu(Stage primaryStage) {
         current_Stage = primaryStage;
 
+        Image gameIcon = new Image("images/Candy-Crush-icon.jpg");
+        current_Stage.getIcons().add(gameIcon);
+
+        current_Stage.setTitle("Candy Crush: POO 2019");
+
         String musicFile = "candyTpe/resources/audio/Candy Crush Intro.mp3";
         Media sound = new Media(Paths.get(musicFile).toUri().toString());
         mediaPlayer = new AudioClip(sound.getSource());
@@ -53,8 +58,6 @@ class MainMenu {
         root.getChildren().addAll(buttons_array);
 
         Scene mainMenuScene = new Scene(root, 800, 600);
-
-        //Class<?>[] levels = {Level1.class, Level2.class, Level3.class, Level2Aux.class}; //para cuando pueda mejorar lo de abajo
 
         buttons_array[0].setOnMouseClicked(e -> launchLevel(primaryStage, Level1.class));
         buttons_array[1].setOnMouseClicked(e -> launchLevel(primaryStage, Level2.class));
