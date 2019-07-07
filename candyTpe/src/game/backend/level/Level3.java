@@ -93,10 +93,9 @@ public class Level3 extends Grid {
     }
     @Override
     public void initialize() {
-        super.initialize(); // llena de contenido las celdas y ahora agrego las bombas
+        super.initialize();
         generateBombs();
         generateCells(bombs);
-
     }
 
     private void decrementBombs() {
@@ -134,7 +133,7 @@ public class Level3 extends Grid {
         }
 
         @Override
-        public long getExtraInfo() {
+        public long getCountdown() {
             return getMinCountdown();
         }
 

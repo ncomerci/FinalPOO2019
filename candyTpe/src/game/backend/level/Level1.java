@@ -32,11 +32,6 @@ public class Level1 extends Grid {
 		}
 
 		@Override
-		public long getExtraInfo() {
-			return 0;
-		}
-
-		@Override
 		public boolean looser() {
 			return winner() || getMoves() >= maxMoves;
 		}

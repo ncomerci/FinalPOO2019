@@ -19,7 +19,7 @@ public class ExtraPanelHandler {
     public void updatePanel() {
         String message;
         if(current_level == Level3.class) {
-            message = String.format("Time left: %d", frame.game().getExtraInfo());
+            message = String.format("Time left: %d", frame.game().getCountdown());
         }
         else {
             message = String.format("Cells to win: %d", Level2.getCantCells() - frame.game().getMoves());

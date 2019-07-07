@@ -33,7 +33,7 @@ public abstract class GameState {
 		return moves;
 	}
 
-	public abstract long getExtraInfo();
+	public long getCountdown(){ return 0;}
 
 	public abstract boolean winner();
 

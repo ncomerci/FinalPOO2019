@@ -12,11 +12,6 @@ public class Level2 extends Grid {
     private class Level2State extends GameState {
 
         @Override
-        public long getExtraInfo() {
-            return 0;
-        }
-
-        @Override
         public boolean looser() {
             return winner();
         }
