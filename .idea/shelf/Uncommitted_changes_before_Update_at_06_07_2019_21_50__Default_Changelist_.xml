@@ -1,0 +1,29 @@
+<changelist name="Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]" date="1562460650705" recycled="false" toDelete="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 06/07/2019 21:50 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/candyTpe/game/backend/level/Level1$Level1State.class" />
+    <option name="AFTER_PATH" value="out/production/candyTpe/game/backend/level/Level1$Level1State.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/Level1$Level1State.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/candyTpe/game/backend/level/Level3$Level3State.class" />
+    <option name="AFTER_PATH" value="out/production/candyTpe/game/backend/level/Level3$Level3State.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/Level3$Level3State.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/candyTpe/game/backend/level/Level1.class" />
+    <option name="AFTER_PATH" value="out/production/candyTpe/game/backend/level/Level1.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/Level1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/candyTpe/game/backend/GameState.class" />
+    <option name="AFTER_PATH" value="out/production/candyTpe/game/backend/GameState.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/GameState.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/candyTpe/game/backend/level/Level2$Level2State.class" />
+    <option name="AFTER_PATH" value="out/production/candyTpe/game/backend/level/Level2$Level2State.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_06_07_2019_21_50_[Default_Changelist]/Level2$Level2State.class" />
+  </binary>
+</changelist>
