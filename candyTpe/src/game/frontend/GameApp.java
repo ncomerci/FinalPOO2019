@@ -1,7 +1,6 @@
 package game.frontend;
 
 import javafx.application.Application;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 

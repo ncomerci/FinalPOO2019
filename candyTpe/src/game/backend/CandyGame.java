@@ -5,7 +5,7 @@ import game.backend.element.Element;
 
 public class CandyGame implements GameListener {
 	
-	private Class<?> levelClass;
+	private final Class<?> levelClass;
 	private Grid grid;
 	private GameState state;
 	

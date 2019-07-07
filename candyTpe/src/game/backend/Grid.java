@@ -16,10 +16,10 @@ public abstract class Grid {
 	
 	public static final int SIZE = 9;
 
-	private Cell[][] g = new Cell[SIZE][SIZE];
-	private Map<Cell, Point> gMap = new HashMap<>();
+	private final Cell[][] g = new Cell[SIZE][SIZE];
+	private final Map<Cell, Point> gMap = new HashMap<>();
 	private GameState state;
-	private List<GameListener> listeners = new ArrayList<>();
+	private final List<GameListener> listeners = new ArrayList<>();
 	private MoveMaker moveMaker;
 	private FigureDetector figureDetector;
 	private Cell wallCell;
@@ -104,7 +104,6 @@ public abstract class Grid {
 				if (g[i][j].isEmpty()) {
 					if (g[i][j].fallUpperContent()) {
 						i = SIZE;
-						j = -1;
 						break;
 					} 
 				}

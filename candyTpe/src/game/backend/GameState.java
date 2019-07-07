@@ -9,10 +9,10 @@ public abstract class GameState {
 
 	private final String winnerSoundPath = "candyTpe/resources/audio/winner sound.mp3";
 	private final String loserSoundPath = "candyTpe/resources/audio/failure sound.mp3";
-	private Media winner_sound = new Media(Paths.get(winnerSoundPath).toUri().toString());
-	private Media loser_sound = new Media(Paths.get(loserSoundPath).toUri().toString());
-	protected AudioClip winnerPlayer = new AudioClip(winner_sound.getSource());
-	protected AudioClip loserPlayer = new AudioClip(loser_sound.getSource());
+	private final Media winner_sound = new Media(Paths.get(winnerSoundPath).toUri().toString());
+	private final Media loser_sound = new Media(Paths.get(loserSoundPath).toUri().toString());
+	protected final AudioClip winnerPlayer = new AudioClip(winner_sound.getSource());
+	protected final AudioClip loserPlayer = new AudioClip(loser_sound.getSource());
 	
 	private long score = 0;
 	private int moves = 0;

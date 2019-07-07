@@ -5,9 +5,9 @@ import game.backend.level.Level3;
 
 public class ExtraPanelHandler {
     
-    private CandyFrame frame;
-    private Class<?> current_level;
-    private ScorePanel extraPanel = new ScorePanel();
+    private final CandyFrame frame;
+    private final Class<?> current_level;
+    private final ScorePanel extraPanel = new ScorePanel();
 
     public ExtraPanelHandler(CandyFrame frame) {
         this.frame = frame;

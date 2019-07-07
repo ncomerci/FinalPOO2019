@@ -13,7 +13,7 @@ import java.util.Map;
 public class MoveMaker {
 
 	private Map<String, Move> map;
-	private Grid grid;
+	private final Grid grid;
 	
 	public MoveMaker(Grid grid) {
 		this.grid = grid;
