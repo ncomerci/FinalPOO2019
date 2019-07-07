@@ -78,14 +78,18 @@ public class Level3 extends Grid {
         return ret;
     }
 
-    Candy specialCase(int i1, int j1, int i2, int j2){
+    private Candy specialCase(int i1, int j1, int i2, int j2){
         Element e1=get(i1,j1);
         Element e2=get(i2,j2);
-        if ((e1 instanceof Bomb && (e2 instanceof HorizontalStripedCandy||e2 instanceof VerticalStripedCandy)))
+        if (compare(e1,e2))
                 return (Candy)e2;
-        else if(e2 instanceof Bomb && (e1 instanceof HorizontalStripedCandy||e1 instanceof VerticalStripedCandy))
+        else if(compare(e2,e1))
             return (Candy) e1;
         else return null;
+    }
+
+    private boolean compare(Element e1,Element e2){
+        return (e1 instanceof Bomb && (e2 instanceof HorizontalStripedCandy||e2 instanceof VerticalStripedCandy));
     }
     @Override
     public void initialize() {
